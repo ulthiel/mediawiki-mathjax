@@ -11,7 +11,7 @@ $.getScript( mw.config.get('wgExtensionAssetsPath') + '/MathJax/modules/MathJax/
             "HTML-CSS": { scale: mw.config.get('wgMjSize') },
             tex2jax: {
                 inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
-                displayMath: [ ['$','$'], ["\\[","\\]"] ],
+                displayMath: [ ["\\[","\\]"] ],
                 processEscapes: true,
                 element: "content",
                 ignoreClass: "(tex2jax_ignore|mw-search-results|searchresults)", /* note: this is part of a regex, check the docs! */
