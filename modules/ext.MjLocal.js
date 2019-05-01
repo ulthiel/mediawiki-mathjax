@@ -15,7 +15,7 @@ $.getScript( mw.config.get('wgExtensionAssetsPath') + '/MathJax/modules/MathJax/
                 processEscapes: true,
                 element: "content",
                 ignoreClass: "(tex2jax_ignore|mw-search-results|searchresults)", /* note: this is part of a regex, check the docs! */
-                skipTags: ["script","noscript","style","textarea","code"] 
+                skipTags: ["script","noscript","style","textarea","code","pre"] 
             },
             TeX: {
                 equationNumbers: { autoNumber: "AMS" },
