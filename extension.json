@@ -1,10 +1,10 @@
 {
-    "name": "MathJax",
-    "version": "1.1",
+    "name": "mediawiki-mathjax",
+    "version": "1.2",
     "author": [
-        "hbshim", "xeyownt"
+        "Dirk Nuyens", "hbshim", "xeyownt", "ulthiel"
     ],
-    "url": "https://www.mediawiki.org/wiki/Extension:MathJax",
+    "url": "https://www.github.com/ulthiel/mediawiki-mathjax",
     "descriptionmsg": "Enables MathJax (http://www.mathjax.org/) for typesetting TeX and LaTeX formulae in MediaWiki",
     "license-name": "GPL v3",
     "type": "Tag extensions",
@@ -24,19 +24,18 @@
     },
     "callback": "MathJax_Parser::onRegistration",
     "config": {
-        "MjSize": 100,
-        "MjUseCDN": true
+        "MjDollar": true,
+        "MjModule": "Mj3"
     },
     "ResourceModules": {
-        "ext.MjCDN": { "scripts": "ext.MjCDN.js" },
-        "ext.MjLocal": { "scripts": "ext.MjLocal.js" },
-        "ext.MjCDN.mobile": { "scripts": "ext.MjCDN.js", "targets": "mobile" },
-        "ext.MjLocal.mobile": { "scripts": "ext.MjLocal.js", "targets": "mobile" }
+        "ext.Mj3": { "scripts": "ext.Mj3.js" },
+        "ext.Mj3-local": { "scripts": "ext.Mj3-local.js" },
+        "ext.Mj2": { "scripts": "ext.Mj2.js" },
+        "ext.Mj2-local": { "scripts": "ext.Mj2-local.js" }
     },
     "ResourceFileModulePaths": {
         "localBasePath": "modules",
-        "remoteExtPath": "MathJax/modules"
+        "remoteExtPath": "mediawiki-mathjax/modules"
     },
     "manifest_version": 1
 }
-
